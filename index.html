@@ -8,8 +8,6 @@
     <!-- Material Design for Bootstrap fonts and icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
@@ -18,7 +16,7 @@
 
     <title>IWHEC 2020 - Home</title>
   </head>
-  <body id="bodytop" data-spy="scroll" data-target="#iwhecheader" data-offset="0">
+  <body id="bodytop" class="mdbootstrap" data-spy="scroll" data-target="#iwhecheader" data-offset="0">
     <header id="iwhecheader" class="clearfix navbar navbar-dark navbar-expand-lg flex-column flex-md-row fixed-top" style="background-color: #0D47A1;">
       <a class="navbar-brand" href="#">
         <img src="assets/images/chec.png" height="40" alt="CHEC Logo" />
@@ -46,8 +44,25 @@
     <div class="container-fluid">
       <div data-spy="scroll" data-target="#iwhecheader" data-offset="0">
           <div id="iwhec" style="padding-top:90px;">
-            <h4>Home</h4>
-            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <h2>Introduction</h2>
+            <hr/>
+            <p class="text-justify lead">
+                The Center for Human-Engaged Computing (CHEC) will organize an international workshop on Human-Engaged
+                Computing (IWHEC 2019). The workshop will be held at Kochi University of Technology in Japan on January
+                12th, 2019.
+            </p>
+            <p class="text-justify lead">
+                The aim of this workshop is to rethink the relationship between humans and computers under
+                consideration of human future. The workshop strives to achieve a common platform to increase various
+                idea exchanges around the world, resulting evolvement of stronger workforce in order to create a better
+                world to live in. In this workshop, we will invite four experts to give their points of view of HEC
+                practice on different Human-Computer Interaction (HCI) directions.
+            </p>
+            <div class="mt-3">
+              <h2>Invited speakers</h2>
+              <hr/>
+
+            </div>
           </div>
           <div id="program" style="padding-top:66px; margin-top:-66px">
              <h2>HEC Workshop Program</h2>
@@ -234,20 +249,10 @@
             <blockquote>
                 <p class="lead">If you need assistance booking accommodation please contact: <br>Kyoko Hatakenaka <a href="mailto:hatakenakakyoko@gmail.com">＜hatakenakakyoko@gmail.com＞</a>.</p>
             </blockquote>
-            <a id="scrollUp" href="#iwhec" style="position: fixed; z-index: 2147483647; background-color: #777;
-    color: #eee;
-    font-size: 30px;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
+            <button type="button" id="scrollUp" class="btn btn-secondary bmd-btn-fab" style="position: fixed; z-index: 2147483647; 
     bottom: 20px;
     right: 20px;
-    overflow: hidden;
-    width: 46px;
-    height: 46px;
-    border: none;
-    opacity: .8;
-    padding-top: 8px;"><i class="material-icons">arrow_upward</i></a>
+    opacity: .8;"><i class="material-icons">arrow_upward</i></button>
         </div>
       <footer class="footer">
                 <h3>Sponsor</h3>
@@ -285,7 +290,7 @@
                 <div class="clearfix"></div>
             </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { 
