@@ -1,9 +1,35 @@
+.jumbotron-top{
+	padding-top: 66px;
+}
 .speech-bubble {
 	position: relative;
 	background: #EEEEEE;
 	border-radius: .4em;
 	margin-bottom: 15px;
 	padding: 15px;
+}
+
+#list-left{
+	z-index: 2147483647;
+	top: 150px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 90px;
+  z-index: 100;
+  border-top: 0;
+}
+
+.list-group-item.active{
+	background-color:#0D47A1; 
+	border-color:#0D47A1;
+}
+
+.container-content{
+	overflow-y:scroll;
 }
 
 .speech-bubble:after {
@@ -20,4 +46,14 @@
 	margin-top: -10px;
 	margin-left: -20px;
 }
+.speaker-container{
+	margin-top: -90px;
+	padding-top: 90px;
+}
+.speaker-box{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.blockList{
+	margin-top: -90px;
+	padding-top: 90px;
 }

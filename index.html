@@ -1,11 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Material Design for Bootstrap fonts and icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
@@ -13,12 +11,14 @@
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <title>IWHEC 2020 - Home</title>
   </head>
-  <body id="bodytop" class="mdbootstrap" data-spy="scroll" data-target="#iwhecheader" data-offset="0">
+  <body id="bodytop" class="mdbootstrap" data-target="#list-left" data-spy="scroll"  data-offset="100">
     <header id="iwhecheader" class="clearfix navbar navbar-dark navbar-expand-lg flex-column flex-md-row fixed-top" style="background-color: #0D47A1;">
       <a class="navbar-brand" href="#">
         <img src="assets/images/chec.png" height="40" alt="CHEC Logo" />
@@ -44,15 +44,39 @@
       </div>
     </header>
     <div class="container-fluid">
-      <div data-spy="scroll" data-target="#iwhecheader" data-offset="0">
-          <div id="iwhec" style="padding-top:66px;">
-            <div class="jumbotron">
-              <div class="container">
-                <h1 class="display-3">International Workshop on Human-Engaged Computing</h1>
-                <p><i class="material-icons">place</i> Kochi University of Technology, Japan
-  January 12th, 2019</p>
-              </div>
-            </div>
+      <div class="jumbotron-top" id="intro">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-3">International Workshop on Human-Engaged Computing</h1>
+            <p><i class="material-icons">place</i> Kochi University of Technology, Japan <br/> <span class="ml-4">January 12th, 2019</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <ul id="list-left" class="nav list-group position-sticky">
+            <li>
+              <a class="list-group-item list-group-item-action" href="#iwhec">Intro</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" href="#speakers">Speakers</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" href="#program">Program</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" href="#registration">Registration</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" href="#hec">Reference</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" href="#access">Access</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 container-content" data-spy="scroll" data-target="#list-left" data-offset="100">
+          <div id="iwhec" style="padding-top:100px; margin-top:-90px;">
             <div class="container">
               <h2>Introduction</h2>
               <hr/>
@@ -67,158 +91,158 @@
                   idea exchanges around the world, resulting evolvement of stronger workforce in order to create a better
                   world to live in. In this workshop, we will invite four experts to give their points of view of HEC
                   practice on different Human-Computer Interaction (HCI) directions.
-              </p>
-              <div class="mt-3">
-                <h2>Invited speakers</h2>
-                <hr/>
-                <div class="speaker-container" style="border-bottom: 1px solid rgba(0,0,0,.1)">
-                  <div class="row">
-                    <div class="speaker col-lg-3 text-center">
-                      <img src="assets/images/inoue.jpg" alt="" class="img-circle speaker-avatar">
-                      <a href="" target="_blank">
-                          <h4>Inoue Tomoo</h4>
-                      </a>
-                      <strong>University of Tsukuba, Japan</strong>
-                    </div>
-                    <div class="speech-bubble col-lg-9">
-                      <h4 class="speech-title">
-                              Sharing roles between human and computer: collaborative work in the physical world
-                      </h4>
-                      <p class="text-justify font-zoom-out"><strong>Abstract:</strong> HCI is not just interface or interaction between human and
-                          computer. It is sharing roles between human and computer since its
-                          origin. In this talk, I will describe how role-sharing between human
-                          and computer was, is, and will be by showing examples especially from
-                          collaborative work in the physical world.
-                      </p>
-                      <br>
-                      <p class="text-justify font-zoom-out"><strong>Bio:</strong> Tomoo Inoue is Professor of the Faculty of Library, Information and
-                          Media Science of University of Tsukuba, Japan. His research interests
-                          include HCI, CSCW, and Technology-enhanced learning. He received his
-                          Ph.D. in Engineering from Keio University in 1998. He is a recipient
-                          of awards including Best Paper Award, Activity Contribution Award and
-                          SIG Research Award from Information Processing Society of Japan
-                          (IPSJ). He has served a number of academic committees, including IPSJ
-                          Journal Group Editor-in-Chief, IPSJ Transactions on Digital Content
-                          Editor-in-Chief, IEICE SIG Human Communication Science Steering Board,
-                          IPSJ SIG Groupware and Network Services Steering Board, ACM CSCW
-                          Papers Associate Chair, and IEEE TC CSCWD. He has co-authored and
-                          edited "Idea Generation Methods and Collaboration Technologies
-                          (Kyoritsu Shuppan)(in Japanese)," and "Communication and Collaboration
-                          Support Systems (IOS Press)" among others.
-                      </p>
-                  </div>
-                  </div>
+              </p> 
+            </div>
+          </div>
+          <div class="speaker-container" id="speakers">
+            <h2>Invited speakers</h2>
+            <hr/>
+            <div class="speaker-box">
+              <div class="row">
+                <div class="speaker col-lg-3 text-center">
+                  <img src="assets/images/inoue.jpg" alt="" class="img-circle speaker-avatar">
+                  <a href="" target="_blank">
+                      <h4>Inoue Tomoo</h4>
+                  </a>
+                  <strong>University of Tsukuba, Japan</strong>
+                </div>
+                <div class="speech-bubble col-lg-9">
+                  <h4 class="speech-title">
+                          Sharing roles between human and computer: collaborative work in the physical world
+                  </h4>
+                  <p class="text-justify font-zoom-out"><strong>Abstract:</strong> HCI is not just interface or interaction between human and
+                      computer. It is sharing roles between human and computer since its
+                      origin. In this talk, I will describe how role-sharing between human
+                      and computer was, is, and will be by showing examples especially from
+                      collaborative work in the physical world.
+                  </p>
+                  <br>
+                  <p class="text-justify font-zoom-out"><strong>Bio:</strong> Tomoo Inoue is Professor of the Faculty of Library, Information and
+                      Media Science of University of Tsukuba, Japan. His research interests
+                      include HCI, CSCW, and Technology-enhanced learning. He received his
+                      Ph.D. in Engineering from Keio University in 1998. He is a recipient
+                      of awards including Best Paper Award, Activity Contribution Award and
+                      SIG Research Award from Information Processing Society of Japan
+                      (IPSJ). He has served a number of academic committees, including IPSJ
+                      Journal Group Editor-in-Chief, IPSJ Transactions on Digital Content
+                      Editor-in-Chief, IEICE SIG Human Communication Science Steering Board,
+                      IPSJ SIG Groupware and Network Services Steering Board, ACM CSCW
+                      Papers Associate Chair, and IEEE TC CSCWD. He has co-authored and
+                      edited "Idea Generation Methods and Collaboration Technologies
+                      (Kyoritsu Shuppan)(in Japanese)," and "Communication and Collaboration
+                      Support Systems (IOS Press)" among others.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="program" class="container" style="padding-top:66px; margin-top:-50px">
-             <h2>HEC Workshop Program</h2>
-             <hr/>
-             <h4>Venue: Kochi University of Technology, A-Wing, A109</h4>
-             <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Time</th>
-                        <th scope="col">Duration</th>
-                        <th scope="col">Schedule</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">09:55 - 10:00</th>
-                        <td>5 minutes</td>
-                        <td>Opening speech - Prof. Xiangshi Ren</td>
+          <div id="program" class="container" style="padding-top:90px; margin-top:-60px">
+               <h2>HEC Workshop Program</h2>
+               <hr/>
+               <h4>Venue: Kochi University of Technology, A-Wing, A109</h4>
+               <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">Time</th>
+                          <th scope="col">Duration</th>
+                          <th scope="col">Schedule</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">09:55 - 10:00</th>
+                          <td>5 minutes</td>
+                          <td>Opening speech - Prof. Xiangshi Ren</td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">10:00 - 10:40</th>
-                        <td>40 minutes</td>
-                        <td>Keynote speech1 - Prof. Kibum Kim</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">10:00 - 10:40</th>
+                          <td>40 minutes</td>
+                          <td>Keynote speech1 - Prof. Kibum Kim</td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">10:40 - 11:20</th>
-                        <td>40 minutes</td>
-                        <td>Keynote speech2 - Dr. Sayan Sacar</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">10:40 - 11:20</th>
+                          <td>40 minutes</td>
+                          <td>Keynote speech2 - Dr. Sayan Sacar</td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">11:20 - 11:30</th>
-                        <td>10 minutes</td>
-                        <td>Coffee break</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">11:20 - 11:30</th>
+                          <td>10 minutes</td>
+                          <td>Coffee break</td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">11:30 - 12:10</th>
-                        <td>40 minutes</td>
-                        <td>Keynote speech3 - Dr. Aliaksei Miniukovich</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">11:30 - 12:10</th>
+                          <td>40 minutes</td>
+                          <td>Keynote speech3 - Dr. Aliaksei Miniukovich</td>
 
-                    </tr>
-                    <tr>
-                            <th scope="row">12:10 - 14:00</th>
-                            <td>110 minutes</td>
-                            <td>Lunch and <a href="http://iw2019.xrenlab.com/calls.html" target="_blank">Poster Session</a></td>
-    
-                    </tr>
-                    <tr>
-                        <th scope="row">14:00 - 14:40</th>
-                        <td>40 minutes</td>
-                        <td>Keynote speech4 - Prof. Inoue Tomoo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">14:40 - 14:50</th>
-                        <td>10 minutes</td>
-                        <td>Coffee break</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">14:50 - 16:20</th>
-                        <td>90 minutes</td>
-                        <td>Topic presentations:
-                            <br>
-                            <br>
-                            - William Delamare (PostDoc): Interaction &amp; VR Research Group: Overview
-                            <br> 
-                            - Kavous Salehzadeh Niksirat (Visiting Researcher): Intergenerational Fitness Tracking Practices between Family Members
-                            <br> 
-                            - Yang Li (Ph.D. Student): Revision Process Design for Typing on Mobile Device
-                            <br>
-                            - Xinhui Jiang (Ph.D. Studnet): Eye-hand Coordination on Mobile Devices
-                            <br>
-                            - Chen Wang (Ph.D. Student): An Entropy-based Approach for Computing the Aesthetics of Interface
-                            <br>
-                            - Fitra Rahmamuliani (Master Student): Designing an Activity Reporting and Plan Sharing System
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16:20 - 16:30</th>
-                        <td>10 minutes</td>
-                        <td>Coffee break</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16:30 - 17:15</th>
-                        <td>45 minutes</td>
-                        <td>CHEC Technical Tour</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">17:15 - 18:00</th>
-                        <td>45 minutes</td>
-                        <td>Discussion on Human-Engaged Computing</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">18:00 - 18:05</th>
-                        <td>5 minutes</td>
-                        <td>Closing</td>
+                      </tr>
+                      <tr>
+                              <th scope="row">12:10 - 14:00</th>
+                              <td>110 minutes</td>
+                              <td>Lunch and <a href="http://iw2019.xrenlab.com/calls.html" target="_blank">Poster Session</a></td>
+      
+                      </tr>
+                      <tr>
+                          <th scope="row">14:00 - 14:40</th>
+                          <td>40 minutes</td>
+                          <td>Keynote speech4 - Prof. Inoue Tomoo</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">14:40 - 14:50</th>
+                          <td>10 minutes</td>
+                          <td>Coffee break</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">14:50 - 16:20</th>
+                          <td>90 minutes</td>
+                          <td>Topic presentations:
+                              <br>
+                              <br>
+                              - William Delamare (PostDoc): Interaction &amp; VR Research Group: Overview
+                              <br> 
+                              - Kavous Salehzadeh Niksirat (Visiting Researcher): Intergenerational Fitness Tracking Practices between Family Members
+                              <br> 
+                              - Yang Li (Ph.D. Student): Revision Process Design for Typing on Mobile Device
+                              <br>
+                              - Xinhui Jiang (Ph.D. Studnet): Eye-hand Coordination on Mobile Devices
+                              <br>
+                              - Chen Wang (Ph.D. Student): An Entropy-based Approach for Computing the Aesthetics of Interface
+                              <br>
+                              - Fitra Rahmamuliani (Master Student): Designing an Activity Reporting and Plan Sharing System
+                          </td>
+                      </tr>
+                      <tr>
+                          <th scope="row">16:20 - 16:30</th>
+                          <td>10 minutes</td>
+                          <td>Coffee break</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">16:30 - 17:15</th>
+                          <td>45 minutes</td>
+                          <td>CHEC Technical Tour</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">17:15 - 18:00</th>
+                          <td>45 minutes</td>
+                          <td>Discussion on Human-Engaged Computing</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">18:00 - 18:05</th>
+                          <td>5 minutes</td>
+                          <td>Closing</td>
 
-                    </tr>
-                </tbody>
+                      </tr>
+                  </tbody>
             </table>
           </div>
           <div id="posters" class="container" style="padding-top:66px; margin-top:-66px">
             <h4>Posters</h4>
             <p>Go to the next pages</p>
           </div>
-          <div id="registration" class="container" style="padding-top:66px; margin-top:-66px">
+          <div id="registration" class="container" style="padding-top:90px; margin-top:-90px">
             <h2>Registration</h2>
             <hr/>
             <table class="table table-striped">
@@ -251,9 +275,8 @@
                                         </tbody>
             </table>
           </div>
-      </div>
-      <div class="blockList container">
-            <div class="page-header" id="hec">
+          <div class="blockList container" id="hec">
+            <div class="page-header">
                 <h2>Reference</h2>
             </div>
             <hr/>
@@ -275,32 +298,33 @@
             <a href="static/images/CHI 2017 Panel on Human Computer Integration versus Powerful Tools.pdf"><i class="material-icons mr-1 align-bottom">get_app</i> See CHI'17 Panel</a>
                     <a href="static/images/sigs1013-salehzadeh-niksiratA.pdf"><i class="material-icons mr-1 align-bottom">get_app</i> See CHI'18 SIG</a>
                 </blockquote>
-
             </div>
             <div class="clearfix"></div>
         </div>
-      <div class="blockList container">
-            <div class="page-header" id="access">
-                <h2>Access</h2>
-            </div>
-            <hr/>
-            <blockquote class="blockquote" style="    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee;">
-                <p class="text-justify">Kochi is connected by air and rail services from major cities in Japan, e.g.,
-                    Tokyo and Osaka. The flight from Tokyo’s Haneda Airport to Kochi’s Ryoma Airport takes about 1 hour
-                    while the flight from Osaka’s Itami Airport takes about 40 minutes.
-                </p>
-            </blockquote>
-            <img src="assets/images/map.png" alt="" class="rounded mx-auto d-block" style="width: 100%" />
-            <blockquote>
-                <p class="lead">If you need assistance booking accommodation please contact: <br>Kyoko Hatakenaka <a href="mailto:hatakenakakyoko@gmail.com">＜hatakenakakyoko@gmail.com＞</a>.</p>
-            </blockquote>
-            <button type="button" id="scrollUp" class="btn btn-secondary bmd-btn-fab" style="position: fixed; z-index: 2147483647; 
-    bottom: 20px;
-    right: 20px;
-    opacity: .8;"><i class="material-icons">arrow_upward</i></button>
+        <div class="blockList container" id="access">
+              <div class="page-header">
+                  <h2>Access</h2>
+              </div>
+              <hr/>
+              <blockquote class="blockquote" style="    padding: 10px 20px;
+      margin: 0 0 20px;
+      font-size: 17.5px;
+      border-left: 5px solid #eee;">
+                  <p class="text-justify">Kochi is connected by air and rail services from major cities in Japan, e.g.,
+                      Tokyo and Osaka. The flight from Tokyo’s Haneda Airport to Kochi’s Ryoma Airport takes about 1 hour
+                      while the flight from Osaka’s Itami Airport takes about 40 minutes.
+                  </p>
+              </blockquote>
+              <img src="assets/images/map.png" alt="" class="rounded mx-auto d-block" style="width: 100%" />
+              <blockquote>
+                  <p class="lead">If you need assistance booking accommodation please contact: <br>Kyoko Hatakenaka <a href="mailto:hatakenakakyoko@gmail.com">＜hatakenakakyoko@gmail.com＞</a>.</p>
+              </blockquote>
+              <button type="button" id="scrollUp" class="btn btn-secondary bmd-btn-fab" style="position: fixed; z-index: 2147483647; 
+      bottom: 20px;
+      right: 20px;
+      opacity: .8;"><i class="material-icons">arrow_upward</i></button>
+          </div>
+        </div>
         </div>
       <footer class="footer">
                 <h3>Sponsor</h3>
@@ -343,15 +367,20 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { 
       $('body').bootstrapMaterialDesign(); 
-      $('[data-spy="scroll"]').each(function () {
-        var $spy = $(this).scrollspy('refresh')
-      })
       var offset = 0;
       $('.navbar li a').click(function(event) {
           event.preventDefault();
           $($(this).attr('href'))[0].scrollIntoView();
           scrollBy(0, offset);
       });
+      $('#list-left li a').click(function(event) {
+          event.preventDefault();
+          $($(this).attr('href'))[0].scrollIntoView();
+          scrollBy(0, offset);
+      });
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh')
+      })
       if (jQuery('#scrollUp').length) {
         var scrollTrigger = 100, // px
             backToTop = function () {
@@ -373,6 +402,29 @@
             }, 700);
         });
       }
+      // grab the initial top offset of the navigation 
+        var stickyNavTop = $('#list-left').offset().top;
+        
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var stickyNav = function(){
+          var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+               
+          // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+          // otherwise change it back to relative
+          if (scrollTop > stickyNavTop) { 
+              $('#list-left').addClass('sticky');
+          } else {
+              $('#list-left').removeClass('sticky'); 
+          }
+      };
+
+      stickyNav();
+      // and run it again every time you scroll
+      $(window).scroll(function() {
+        stickyNav();
+      });
+      $('#list-left a:first').addClass('active');
+      $('#list-left a:last').removeClass('active');
     });
     </script>
   </body>
