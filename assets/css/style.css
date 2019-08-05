@@ -45,6 +45,18 @@ header{
 	overflow-y:scroll;
 }
 
+.speaker-avatar{
+	height: 90px;
+}
+
+.speaker a, .speaker a:hover{
+	color: #0D47A1;
+}
+
+.speaker h4{
+	font-size: 18px;
+}
+
 .speech-bubble:after {
 	content: '';
 	position: absolute;
